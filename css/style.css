@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0e0e0e;
+}
+/*Background*/
+.background {
+  background-color: #000;
+  margin: 0 auto;
+  width: auto;
+  max-width: 980px;
+  padding: 25px;
+  height: 100vh;
+}
+.wrapper {
+  min-width: 882px;
+  width: 100%;
+  background-color: #1e1e1e;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  position: static;
+}
+/* Header */
+header {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #0e100e;
+  align-items: center;
+  margin: -10px;
+  margin-bottom: 10px;
+}
+header img {
+  max-height: 25px;
+  margin-right: 5px;
+}
+
+header .title {
+  flex-basis: 33.3%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 15px 10px;
+}
+.title img {
+  filter: grayscale(100%);
+}
+
+header .title:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: #1e1e1e;
+}
+.active img {
+  filter: grayscale(0%);
+}
+/* CONTENT PAGE */
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #000;
+  padding: 30px;
+  gap: 45px;
+}
+/* IMG CONTENT*/
+figure img {
+  margin-top: 25px;
+  max-width: 380px;
+}
+/* TEXT CONTENT */
+.text {
+  font-size: 15px;
+  font-weight: bold;
+  flex-basis: 380px;
+  padding: 80px 45px;
+}
+.text h1 {
+  font-size: 45px;
+}
+.text p {
+  margin-top: 30px;
+  width: 310px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* FLAMMABLE TEXT*/
+#fl-ct .text {
+  background: #ff3019; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #ff3019 0%,
+    #cf0404 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #ff3019 0%,
+    #cf0404 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ff3019 0%,
+    #cf0404 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+}
+/* Radioactive text*/
+#rd-ct .text {
+  background: rgb(247, 129, 81);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 129, 81, 1) 42%,
+    rgba(249, 150, 76, 1) 64%,
+    rgba(249, 170, 70, 1) 79%
+  );
+  color: #000;
+}
+/*Biohazard text */
+#bh-ct .text {
+  color: #000;
+  background: rgb(72, 164, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 164, 153, 1) 35%,
+    rgba(70, 197, 160, 1) 59%,
+    rgba(84, 236, 167, 1) 79%
+  );
+}
+/* hide text and image*/
+.hide {
+  display: none;
+}
